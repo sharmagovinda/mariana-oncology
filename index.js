@@ -1,13 +1,11 @@
-const hamB =document.querySelector("#hamBurger");
-const hamClose =document.querySelector("#hamBurger-close");
-const nav =document.querySelector("#navBar");
+document.addEventListener("DOMContentLoaded", function () {
+ const hamB = document.querySelector("#hamBurger");
+ const nav = document.querySelector("#navBar");
 
-hamB.addEventListener('click',()=>{
-nav.classList.add('active');
-})
-
-hamClose.addEventListener('click',()=>{
-nav.classList.remove('active');
-})
-
-
+ if (hamB && nav) {
+   hamB.addEventListener("click", () => {
+     hamB.classList.toggle("active");
+     nav.classList.toggle("active");
+   });
+ }
+});

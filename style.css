@@ -52,13 +52,13 @@
   left: 0;
  }
 
- .header-menu {
+ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.heder-nav-menu-wrapper {
+.header-nav-menu {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
@@ -67,7 +67,7 @@
 }
 
 @media (max-width:1024px) {
-  .heder-nav-menu-wrapper {
+  .header-nav-menu {
     display: none;
   }
   
@@ -87,7 +87,6 @@ a {
 }
 
 nav.active .hamBurger-close {
-  display: block;
   display: flex;
   float: right;
   margin-bottom: 50px;
@@ -95,37 +94,25 @@ nav.active .hamBurger-close {
 }
 
 
-nav.active .header-nav-menu {
-  display: flex;
-  flex-direction: column;
-  background-color: blue;
-  height: 100%;
-  width: 100%;
-}
-
-nav.active .heder-menu {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 25px;
-  /* background-color: blue;
-  height: 100%;
-  width: 100%; */
-  font-size: 50px;
-  margin-bottom: 30px;
-}
-
-nav.active .heder-menu-wrapper {
+nav.active .header-menu-wrapper {
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
-  display: block;
+  /* display: block; */
   background-color: blue;
   height: 100vh;
   width: 100%;
   padding-top: 20px;
   transition: all 0.5s;
+}
+
+nav.active .header-nav-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  font-size: 65px;
 }
 
 .logo {
@@ -138,17 +125,38 @@ nav.active .heder-menu-wrapper {
   flex-direction: column;
   padding-top: 30px;
   padding-right: 10px;
-
+  justify-content: space-between;
+  width: 45px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
+margin-top: 25px;
 }
 
 .hamburger span {
-  width: 50px;
-  height: 2px;
-  display: inline-block;
-  background-color: white;
-  border-radius: 100%;
-  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: black;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  
 
+}
+/* When menu is active, transform the hamburger into an "X" */
+.hamburger.active span:nth-child(1) {
+  transform: translateY(12px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-12px) rotate(-45deg);
 }
 
 @media (max-width: 1024px) {
