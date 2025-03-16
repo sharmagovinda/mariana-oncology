@@ -1,116 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Runo</title>
+    <title>Mariana Oncology</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js"></script>
 </head>
-
 <body>
-    <div class="site-wrapper">
 
-        <!-- Site Header -->
+     <header class="header">
+      <div class="container">
+        <nav id="navBar">
+        <div class="header-menu">
+          <logo><a href="/">
+            <img src="./assets/images/header-logo.png" alt="Logo">
+            </a></logo>
+            <div class="heder-menu-wrapper">
+              <button class="hamBurger-close" id="hamBurger-close"><img src="./assets/images/cross-sign.jpg" alt="cross" width="40px" height="40px"></button>                
+              <div class="header-nav-menu">
+                <ul class="heder-nav-menu-wrapper">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Articles</a></li>
+                  <li><a href="#">Contact Us</a></li>
+              </ul>
+              </div>
+            
+            </div>
+             <div class="hamburger" id="hamBurger">
+              <span></span>
+              <span></span>
+              <span></span>
+             </div>
+        </div>
+      </nav>
+      </div>
+    </header>
+     <section class="hero-section">
+      <div class="hero-image">
+        <div class="container">
+         <p>Team & Careers</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+    </footer>
 
-        <main class="site-content">
-            <!-- Hero Section -->
-
-            <section class="block-popular">
-              <div class="block-popular-container">
-                <h2>Popular topics</h2>
-                <div class="block-popular__nav">
-                    <div class="block-popular__left-nav">
-                        <ul class="left-nav">
-                            <li><a href="#">All</a></li>
-                            <li><a href="#">Adventure</a></li>
-                            <li><a href="#">Travel</a></li>
-                            <li><a href="#">Fashion</a></li>
-                            <li><a href="#">Technology</a></li>
-                            <li><a href="#">Branding</a></li>
-                        </ul>
-                    </div>
-                    <div class="block-popular__right-nav">
-                        <a href="#">View All</a>
-                    </div>
-                </div>
-
-                <div class="Popular-card-section">
-                    <div class="Popular-card">
-                      <img src="./assets/images/dream-destination-visit.jpg" alt="Card image"  border-radius="5px">
-                      <p class="Popular-card-date">08.08.2021</p>
-                        <h4 class="Popular-card-header">Dream destinations to visit thisyear in Paris</h4>
-                        <p class="Popular-card-description">Progressively incentivize cooperative systems through technically sound
-                          functionalities. Credibly productivate seamless data with flexible schemas.</p>
-                    </div>
-
-                    <div class="Popular-card">
-                      <img src="./assets/images/breathtaking-first-person.jpg" alt="Card image"  border-radius="5px">
-                      <p class="Popular-card-date">08.08.2021</p>
-                        <h4 class="Popular-card-header">Breathtaking first-person photos around Europe</h4>
-                        <p class="Popular-card-description">Progressively incentivize cooperative systems through
-                          technically sound functionalities. Credibly productivate
-                          seamless data with flexible schemas.</p>
-                    </div>
-
-                    <div class="Popular-card">
-                      <img src="./assets/images/what-collectors-need-know.jpg" alt="Card image" border-radius="5px">
-                      <p class="Popular-card-date">08.08.2021</p>
-                        <h4 class="Popular-card-header">What collectors need to know about authenticity</h4>
-                        <p class="Popular-card-description">Progressively incentivize cooperative systems through technically sound
-                          functionalities. Credibly productivate seamless data with flexible schemas.</p>
-                    </div>
-
-                    <div class="Popular-card">
-                      <img src="./assets/images/instagram-artists-great-photograpgy.jpg" alt="Card image"  border-radius="5px">
-                      <p class="Popular-card-date">08.08.2021</p>
-                        <h4 class="Popular-card-header">Instagram artists with great photography skills</h4>
-                        <p class="Popular-card-description">Progressively incentivize cooperative systems through technically sound
-                          functionalities. Credibly productivate seamless data with flexible schemas.</p>
-                    </div>
-
-                    <div class="Popular-card">
-                      <img src="./assets/images/thins-to-know-before-visiting.jpg" alt="Card image"  border-radius="5px">
-                      <p class="Popular-card-date">08.08.2021</p>
-                        <h4 class="Popular-card-header">Thins to know before visiting Cave in Germany</h4>
-                        <p class="Popular-card-description">Progressively incentivize cooperative systems through technically sound
-                          functionalities. Credibly productivate seamless data with flexible schemas.</p>
-                    </div>
-
-                    <div class="Popular-card">
-                      <img src="./assets/images/nina-smith-vibrant-work.jpg" alt="Card image"  border-radius="5px">
-                      <p class="Popular-card-date">08.08.2021</p>
-                        <h4 class="Popular-card-header">Nina Smith vibrant work collab with Nike Dunk</h4>
-                        <p class="Popular-card-description">Progressively incentivize cooperative systems through technically sound
-                          functionalities. Credibly productivate seamless data with flexible schemas.</p>
-                    </div>
-
-                    <div class="Popular-card">
-                      <img src="./assets/images/richard-norton-photorealistic.jpg" alt="Card image"  border-radius="5px">
-                      <p class="Popular-card-date">08.08.2021</p>
-                        <h4 class="Popular-card-header">Richard Norton photorealistic rendering as real photos</h4>
-                        <p class="Popular-card-description">Progressively incentivize cooperative systems through technically sound
-                          functionalities. Credibly productivate seamless data with flexible schemas.</p>
-                    </div>
-
-                    <div class="Popular-card">
-                      <img src="./assets/images/25-quality-collectors-toys.jpg" alt="Card image"  border-radius="5px">
-                      <p class="Popular-card-date">08.08.2021</p>
-                        <h4 class="Popular-card-header">25 quality collectors toys inspired by famous films</h4>
-                        <p class="Popular-card-description">Progressively incentivize cooperative systems through technically sound
-                          functionalities. Credibly productivate seamless data with flexible schemas.</p>
-                    </div>
-                  </div>
-                </div>
-            </section>
-            <!-- Popular Section -->
-
-            <!-- fashion section -->
-
-        </main>
-        <!-- Site Content -->
-        <!-- Site Footer -->
-    </div>
 </body>
-
 </html>
