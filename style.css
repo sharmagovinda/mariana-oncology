@@ -180,6 +180,28 @@ display: none;  }
   margin-bottom: 50px;
  }
  
+ .hero-content-wrapper {
+  margin-top: 30em;
+  margin-left: 2em;
+ }
+
+ .hero-content-upper {
+  font-size: 50px;
+  color: white;
+ }
+
+ .hero-content-middle {
+  color: yellow;
+  padding-left: 10px;
+  font-size: 60px;
+ }
+
+ .hero-content-lower {
+  color: white;
+  font-size: 50px;
+  margin-left: 2em;
+  margin-top: -20px;
+ }
+
+
  /* Footer Styles */
- 
- 
